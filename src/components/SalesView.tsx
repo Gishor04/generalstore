@@ -228,10 +228,7 @@ export function SalesView({ token, addToast, storeName }: SalesViewProps) {
           <span>Invoice No:</span>
           <span>${currentReceipt?.invoiceNumber}</span>
         </div>
-        <div class="meta-row">
-          <span>Cashier:</span>
-          <span>${currentReceipt?.soldByName}</span>
-        </div>
+
         <div class="divider"></div>
         <table>
           <thead>
@@ -509,7 +506,7 @@ export function SalesView({ token, addToast, storeName }: SalesViewProps) {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
               <input
                 type="text"
-                placeholder="Search historical records by invoice, cashier, or product..."
+                placeholder="Search historical records by invoice or product..."
                 value={historySearchQuery}
                 onChange={e => setHistorySearchQuery(e.target.value)}
                 className="w-full bg-white border border-slate-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 rounded-xl pl-11 pr-4 py-2.5 text-sm font-medium outline-none transition-all"
@@ -530,7 +527,7 @@ export function SalesView({ token, addToast, storeName }: SalesViewProps) {
                       <tr>
                         <th className="px-6 py-4">Invoice No</th>
                         <th className="px-6 py-4">Transaction Date</th>
-                        <th className="px-6 py-4">Cashier</th>
+
                         <th className="px-6 py-4">Items Summary</th>
                         <th className="px-6 py-4 text-right">Invoice Amount</th>
                         <th className="px-6 py-4 text-right">Actions</th>
@@ -544,12 +541,7 @@ export function SalesView({ token, addToast, storeName }: SalesViewProps) {
                             {new Date(s.timestamp).toLocaleDateString()} at{' '}
                             {new Date(s.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                           </td>
-                          <td className="px-6 py-4">
-                            <span className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 bg-slate-50 px-2 py-1 rounded-lg">
-                              <User className="h-3 w-3" />
-                              {s.soldByName}
-                            </span>
-                          </td>
+
                           <td className="px-6 py-4">
                             <p className="text-xs text-slate-500 font-medium max-w-[220px] truncate">
                               {s.products.map(p => `${p.name} (x${p.quantitySold})`).join(', ')}
@@ -622,10 +614,7 @@ export function SalesView({ token, addToast, storeName }: SalesViewProps) {
                   <span>INVOICE NO:</span>
                   <span className="font-semibold text-slate-700">{currentReceipt.invoiceNumber}</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>CASHIER:</span>
-                  <span className="font-semibold text-slate-700 uppercase">{currentReceipt.soldByName}</span>
-                </div>
+
               </div>
 
               {/* Items Table */}

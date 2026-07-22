@@ -2,7 +2,7 @@
  * Shared Type Definitions for General Store Management Web Application
  */
 
-export type UserRole = 'owner' | 'staff';
+export type UserRole = 'owner';
 
 export interface User {
   id: string;
@@ -11,7 +11,7 @@ export interface User {
   email: string;
   role: UserRole;
   storeName: string;
-  pin: string; // Hashed PIN for owner, empty or optional for staff
+  pin: string; // Hashed PIN for owner
 }
 
 export interface Product {

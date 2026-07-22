@@ -20,19 +20,7 @@ export function SettingsView({ token, addToast, user, updateUserContext }: Setti
   const [confirmPin, setConfirmPin] = useState('');
   const [updatingPin, setUpdatingPin] = useState(false);
 
-  // Staff creation state
-  const [staffName, setStaffName] = useState('');
-  const [staffEmail, setStaffEmail] = useState('');
-  const [staffUsername, setStaffUsername] = useState('');
-  const [staffPassword, setStaffPassword] = useState('');
-  const [ownerConfirmPin, setOwnerConfirmPin] = useState('');
-  const [creatingStaff, setCreatingStaff] = useState(false);
 
-  // Staff list state
-  const [staffList, setStaffList] = useState<any[]>([]);
-  const [loadingStaff, setLoadingStaff] = useState(false);
-
-  const [showPass, setShowPass] = useState(false);
 
   // MongoDB status state
   const [mongoConnected, setMongoConnected] = useState(false);
@@ -58,26 +46,10 @@ export function SettingsView({ token, addToast, user, updateUserContext }: Setti
     }
   };
 
-  const fetchStaffList = async () => {
-    if (user?.role !== 'owner') return;
-    setLoadingStaff(true);
-    try {
-      const response = await fetch('/api/auth/staff', {
-        headers: { 'Authorization': `Bearer ${token}` },
-      });
-      if (response.ok) {
-        const data = await response.json();
-        setStaffList(data);
-      }
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setLoadingStaff(false);
-    }
-  };
+
 
   useEffect(() => {
-    fetchStaffList();
+
     fetchMongoStatus();
   }, []);
 
@@ -159,50 +131,7 @@ export function SettingsView({ token, addToast, user, updateUserContext }: Setti
     }
   };
 
-  const handleCreateStaff = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!staffName || !staffEmail || !staffUsername || !staffPassword || !ownerConfirmPin) {
-      addToast('Please fill out all staff fields.', 'warning');
-      return;
-    }
 
-    setCreatingStaff(true);
-    try {
-      const response = await fetch('/api/auth/add-staff', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          name: staffName,
-          email: staffEmail,
-          username: staffUsername,
-          password: staffPassword,
-          pin: ownerConfirmPin,
-        }),
-      });
-
-      const data = await response.json();
-      if (response.ok) {
-        addToast('Staff cashier account registered successfully.', 'success');
-        // Reset form
-        setStaffName('');
-        setStaffEmail('');
-        setStaffUsername('');
-        setStaffPassword('');
-        setOwnerConfirmPin('');
-        fetchStaffList();
-      } else {
-        addToast(data.error || 'Failed to register staff account.', 'error');
-      }
-    } catch (err) {
-      console.error(err);
-      addToast('A network error occurred.', 'error');
-    } finally {
-      setCreatingStaff(false);
-    }
-  };
 
   const isOwner = user?.role === 'owner';
 
@@ -214,12 +143,12 @@ export function SettingsView({ token, addToast, user, updateUserContext }: Setti
           <Settings className="h-6 w-6 text-indigo-600" />
           <h2 className="text-xl font-bold text-slate-900 tracking-tight">System Settings</h2>
         </div>
-        <p className="text-sm text-slate-500">Configure core attributes, update security credentials, and register cashiers.</p>
+        <p className="text-sm text-slate-500">Configure core attributes and update security credentials.</p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+      <div className="max-w-2xl mx-auto items-start">
         {/* Left Column: Store Profile & PIN Security */}
-        <div className="space-y-6 lg:col-span-1">
+        <div className="space-y-6">
           {/* Store Profile */}
           <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
             <div className="flex items-center gap-2 border-b border-slate-50 pb-3">
@@ -382,146 +311,7 @@ export function SettingsView({ token, addToast, user, updateUserContext }: Setti
           </div>
         </div>
 
-        {/* Right Column: Multi-User Staff Cashiers (Owner only) */}
-        <div className="lg:col-span-2 space-y-6">
-          {isOwner ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-              {/* Register Staff form */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
-                <div className="flex items-center gap-2 border-b border-slate-50 pb-3">
-                  <UserPlus className="h-5 w-5 text-indigo-600" />
-                  <h3 className="font-bold text-slate-900">Add Cashier Staff</h3>
-                </div>
 
-                <form onSubmit={handleCreateStaff} className="space-y-3.5">
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-500 uppercase">Staff Full Name</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="e.g., Emily Cashier"
-                      value={staffName}
-                      onChange={e => setStaffName(e.target.value)}
-                      className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-4 py-2 text-sm font-medium outline-none transition-all"
-                    />
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-500 uppercase">Staff Email Address</label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="emily@example.com"
-                      value={staffEmail}
-                      onChange={e => setStaffEmail(e.target.value)}
-                      className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-4 py-2 text-sm font-medium outline-none transition-all"
-                    />
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-500 uppercase">Login Username</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="emily123"
-                      value={staffUsername}
-                      onChange={e => setStaffUsername(e.target.value)}
-                      className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-4 py-2 text-sm font-medium outline-none transition-all"
-                    />
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-500 uppercase">Login Password</label>
-                    <div className="relative">
-                      <input
-                        type={showPass ? 'text' : 'password'}
-                        required
-                        placeholder="••••••••"
-                        value={staffPassword}
-                        onChange={e => setStaffPassword(e.target.value)}
-                        className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl pl-4 pr-10 py-2 text-sm font-medium outline-none transition-all"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => setShowPass(!showPass)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-                      >
-                        {showPass ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-500 uppercase">Owner Security PIN (to authorize)</label>
-                    <input
-                      type="password"
-                      required
-                      maxLength={4}
-                      placeholder="••••"
-                      value={ownerConfirmPin}
-                      onChange={e => setOwnerConfirmPin(e.target.value)}
-                      className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-xl px-4 py-2 text-sm font-medium outline-none transition-all text-center tracking-widest"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={creatingStaff}
-                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold py-2.5 rounded-xl transition-all active:scale-95 disabled:opacity-50 mt-2"
-                  >
-                    {creatingStaff ? 'Adding staff...' : 'Add Cashier Account'}
-                  </button>
-                </form>
-              </div>
-
-              {/* Staff Cashiers directory */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
-                <div className="flex items-center gap-2 border-b border-slate-50 pb-3">
-                  <Users className="h-5 w-5 text-indigo-600" />
-                  <h3 className="font-bold text-slate-900 font-sans">Active Cashier List</h3>
-                </div>
-
-                {loadingStaff ? (
-                  <div className="text-center py-10">
-                    <div className="h-6 w-6 border-2 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
-                    <span className="text-xs text-slate-400">Loading cashiers list...</span>
-                  </div>
-                ) : staffList.length > 0 ? (
-                  <div className="space-y-3.5 max-h-[460px] overflow-y-auto pr-1 no-scrollbar">
-                    {staffList.map((st) => (
-                      <div key={st.id} className="p-3 bg-slate-50/50 rounded-xl border border-slate-100 flex items-center justify-between">
-                        <div className="space-y-0.5">
-                          <p className="text-sm font-bold text-slate-800 leading-tight">{st.name}</p>
-                          <p className="text-xs text-slate-500 font-medium">{st.username} • {st.email}</p>
-                        </div>
-                        <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full uppercase shrink-0">
-                          {st.role}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="text-center py-10 bg-slate-50/30 rounded-2xl border border-dashed">
-                    <Users className="h-8 w-8 text-slate-300 mx-auto mb-1.5" />
-                    <p className="text-xs font-bold text-slate-500">No staff registered yet</p>
-                    <p className="text-[11px] text-slate-400 max-w-[160px] mx-auto mt-0.5">
-                      Create limited cashier roles to handle POS transactions.
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          ) : (
-            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm text-center py-16 space-y-3">
-              <ShieldCheck className="h-12 w-10 text-emerald-500 mx-auto" />
-              <h3 className="font-bold text-slate-900 text-lg">Staff Role Environment</h3>
-              <p className="text-sm text-slate-500 max-w-sm mx-auto leading-relaxed">
-                As a staff member of <span className="font-bold text-indigo-600">{user?.storeName}</span>, your permissions are limited.
-                You can record active cash sales, checkout customers, and print invoices, but database administration features (inventory additions, settings, growth metrics) are secured.
-              </p>
-            </div>
-          )}
-        </div>
       </div>
     </div>
   );

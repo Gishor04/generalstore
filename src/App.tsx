@@ -188,7 +188,7 @@ export default function App() {
           <div className="bg-white py-8 px-4 border border-slate-100 shadow-md shadow-slate-100/40 rounded-3xl sm:px-10">
             {isLoginView ? (
               <form onSubmit={handleLogin} className="space-y-4">
-                <h2 className="text-lg font-bold text-slate-900 border-b border-slate-50 pb-2 mb-4">Cashier / Owner Log In</h2>
+                <h2 className="text-lg font-bold text-slate-900 border-b border-slate-50 pb-2 mb-4">Owner Log In</h2>
 
                 {authError && (
                   <div className="p-3 bg-rose-50 border border-rose-100 rounded-xl flex items-center gap-2 text-rose-600 text-xs font-semibold">
@@ -668,10 +668,7 @@ export default function App() {
               updateUserContext={updateStoreNameContext}
             />
           )}
-          {/* Fallback routing for limited cashier staff who cannot view Dashboard/Overhead view */}
-          {!isOwner && (activeView === 'dashboard' || activeView === 'expenses') && (
-            <SalesView token={authState.token} addToast={addToast} storeName={authState.user?.storeName || 'My Store'} />
-          )}
+
         </main>
       </div>
 

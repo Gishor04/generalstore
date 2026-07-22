@@ -22,7 +22,7 @@ interface AuthenticatedRequest extends express.Request {
     id: string;
     username: string;
     name: string;
-    role: 'owner' | 'staff';
+    role: 'owner';
     storeName: string;
   };
 }
@@ -55,12 +55,6 @@ function verifyPinHelper(userId: string, enteredPin: string): boolean {
 
   // Verify entered PIN against store owner's PIN
   let targetUser = currentUser;
-  if (currentUser.role === 'staff') {
-    // If staff, verify using the store owner's PIN
-    const owner = users.find(u => u.role === 'owner' && u.storeName === currentUser.storeName);
-    if (!owner) return false;
-    targetUser = owner;
-  }
 
   if (!targetUser.pin) return false;
   return bcrypt.compareSync(enteredPin, targetUser.pin);
@@ -191,93 +185,7 @@ app.post('/api/auth/verify-pin', authenticateToken, (req: AuthenticatedRequest, 
   }
 });
 
-// Add Staff (Owner only)
-app.post('/api/auth/add-staff', authenticateToken, (req: AuthenticatedRequest, res) => {
-  try {
-    if (req.user!.role !== 'owner') {
-      res.status(403).json({ error: 'Only store owners can add staff accounts' });
-      return;
-    }
 
-    const { name, email, username, password, pin } = req.body;
-
-    if (!name || !email || !username || !password || !pin) {
-      res.status(400).json({ error: 'All fields are required including owner PIN' });
-      return;
-    }
-
-    // First verify owner's PIN to authorize staff creation
-    const isPinValid = verifyPinHelper(req.user!.id, pin);
-    if (!isPinValid) {
-      res.status(403).json({ error: 'Invalid owner security PIN' });
-      return;
-    }
-
-    const users = getUsers();
-    const existingUser = users.find(u => u.username === username || u.email === email);
-    if (existingUser) {
-      res.status(400).json({ error: 'Staff username or email already exists' });
-      return;
-    }
-
-    const salt = bcrypt.genSaltSync(10);
-    const hashedPassword = bcrypt.hashSync(password, salt);
-
-    const newStaff = {
-      id: 'usr_' + Date.now().toString(),
-      username,
-      name,
-      email,
-      role: 'staff',
-      storeName: req.user!.storeName,
-      pin: '', // Staff does not have a unique store PIN
-      password: hashedPassword,
-    };
-
-    users.push(newStaff as any);
-    saveUsers(users);
-
-    res.status(201).json({
-      message: 'Staff account created successfully',
-      staff: {
-        id: newStaff.id,
-        username: newStaff.username,
-        name: newStaff.name,
-        email: newStaff.email,
-        role: newStaff.role,
-      },
-    });
-  } catch (error) {
-    console.error('Add staff error:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
-
-// Get Staff List (Owner only)
-app.get('/api/auth/staff', authenticateToken, (req: AuthenticatedRequest, res) => {
-  try {
-    if (req.user!.role !== 'owner') {
-      res.status(403).json({ error: 'Unauthorized access' });
-      return;
-    }
-
-    const users = getUsers();
-    const staff = users
-      .filter(u => u.role === 'staff' && u.storeName === req.user!.storeName)
-      .map(u => ({
-        id: u.id,
-        username: u.username,
-        name: u.name,
-        email: u.email,
-        role: u.role,
-      }));
-
-    res.json(staff);
-  } catch (error) {
-    console.error('Get staff list error:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
 
 // ==================== DATABASE STATUS ROUTE ====================
 app.get('/api/mongodb-status', (req, res) => {
@@ -640,7 +548,7 @@ app.post('/api/settings/change-store', authenticateToken, (req: AuthenticatedReq
 
     const users = getUsers();
 
-    // Update storeName for ALL users in this store (both owner and staff)
+    // Update storeName for ALL users in this store
     const oldStoreName = req.user!.storeName;
     const updatedUsers = users.map(u => {
       if (u.storeName === oldStoreName) {
@@ -971,7 +879,7 @@ app.get('/api/reports/export-pdf', authenticateToken, (req: AuthenticatedRequest
           <tr>
             <th>Invoice</th>
             <th>Date</th>
-            <th>Cashier</th>
+
             <th>Product Items</th>
             <th class="text-right">Qty</th>
             <th class="text-right">Price</th>
@@ -985,7 +893,7 @@ app.get('/api/reports/export-pdf', authenticateToken, (req: AuthenticatedRequest
                 <tr>
                   <td>${idx === 0 ? `<strong>${s.invoiceNumber}</strong>` : ''}</td>
                   <td>${idx === 0 ? s.date : ''}</td>
-                  <td>${idx === 0 ? s.soldByName : ''}</td>
+
                   <td>${p.name}</td>
                   <td class="text-right">${p.quantitySold}</td>
                   <td class="text-right">$${p.priceAtSale.toFixed(2)}</td>
