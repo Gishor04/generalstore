@@ -1,5 +1,4 @@
 export default async function handler(req: any, res: any) {
-
     if (req.method !== "POST") {
         return res.status(405).json({
             message: "Method not allowed"
@@ -10,9 +9,7 @@ export default async function handler(req: any, res: any) {
 
     return res.status(200).json({
         message: "Register API working",
-        user: {
-            name,
-            email
-        }
+        name,
+        email
     });
 }
