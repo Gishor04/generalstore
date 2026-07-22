@@ -1,8 +1,7 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import bcrypt from "bcryptjs";
-import fs from "fs";
-import path from "path";
 import jwt from "jsonwebtoken";
+import { MongoClient } from "mongodb";
 
 
 const JWT_SECRET =
@@ -10,11 +9,23 @@ const JWT_SECRET =
     "general-store-super-secret-key-12345!";
 
 
-const filePath =
-    path.join(
-        "/tmp",
-        "users.json"
-    );
+const MONGODB_URI =
+    process.env.MONGODB_URI!;
+
+
+let client: MongoClient | null = null;
+
+
+async function connectDB() {
+
+    if (!client) {
+        client = new MongoClient(MONGODB_URI);
+        await client.connect();
+    }
+
+    return client.db("general-store");
+
+}
 
 
 
@@ -23,6 +34,7 @@ export default async function handler(
     res: VercelResponse
 ) {
 
+
     if (req.method !== "POST") {
 
         return res.status(405).json({
@@ -30,7 +42,6 @@ export default async function handler(
         });
 
     }
-
 
 
     try {
@@ -53,29 +64,16 @@ export default async function handler(
 
 
 
-        let users: any[] = [];
-
-
-
-        if (fs.existsSync(filePath)) {
-
-            users =
-                JSON.parse(
-                    fs.readFileSync(
-                        filePath,
-                        "utf8"
-                    )
-                );
-
-        }
+        const db = await connectDB();
 
 
 
         const user =
-            users.find(
-                (u) =>
-                    u.username === username
-            );
+            await db
+                .collection("users")
+                .findOne({
+                    username
+                });
 
 
 
@@ -111,7 +109,7 @@ export default async function handler(
             jwt.sign(
 
                 {
-                    id: user.id,
+                    id: user._id,
                     username: user.username,
                     role: user.role,
                     storeName: user.storeName
@@ -134,7 +132,7 @@ export default async function handler(
             token,
 
             user: {
-                id: user.id,
+                id: user._id,
                 name: user.name,
                 username: user.username,
                 storeName: user.storeName,
@@ -144,14 +142,18 @@ export default async function handler(
         });
 
 
+
     }
     catch (error: any) {
 
+        console.log(error);
+
         return res.status(500).json({
-            error: error.message
+
+            error: "Database connection error"
+
         });
 
     }
-
 
 }

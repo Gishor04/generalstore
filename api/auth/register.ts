@@ -1,8 +1,7 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import bcrypt from "bcryptjs";
-import fs from "fs";
-import path from "path";
 import jwt from "jsonwebtoken";
+import { MongoClient } from "mongodb";
 
 
 const JWT_SECRET =
@@ -10,10 +9,25 @@ const JWT_SECRET =
     "general-store-super-secret-key-12345!";
 
 
-const filePath = path.join(
-    "/tmp",
-    "users.json"
-);
+const MONGODB_URI =
+    process.env.MONGODB_URI!;
+
+
+let client: MongoClient;
+
+
+
+async function connectDB() {
+
+    if (!client) {
+        client = new MongoClient(MONGODB_URI);
+        await client.connect();
+    }
+
+    return client.db("general_store");
+
+}
+
 
 
 export default async function handler(
@@ -21,14 +35,19 @@ export default async function handler(
     res: VercelResponse
 ) {
 
+
     if (req.method !== "POST") {
+
         return res.status(405).json({
             error: "Method not allowed"
         });
+
     }
 
 
+
     try {
+
 
         const {
             name,
@@ -57,29 +76,24 @@ export default async function handler(
 
 
 
-        let users: any[] = [];
+        const db = await connectDB();
 
 
 
-        if (fs.existsSync(filePath)) {
-
-            const data =
-                fs.readFileSync(
-                    filePath,
-                    "utf8"
-                );
-
-            users = JSON.parse(data);
-
-        }
+        const users =
+            db.collection("users");
 
 
 
-        const exists = users.find(
-            (u) =>
-                u.email === email ||
-                u.username === username
-        );
+        const exists =
+            await users.findOne({
+
+                $or: [
+                    { email },
+                    { username }
+                ]
+
+            });
 
 
 
@@ -111,14 +125,13 @@ export default async function handler(
 
         const newUser = {
 
-            id:
-                "usr_" + Date.now(),
 
             name,
 
             email,
 
             username,
+
 
             password:
                 hashedPassword,
@@ -131,24 +144,18 @@ export default async function handler(
             storeName,
 
 
-            role: "owner"
+            role: "owner",
+
+
+            createdAt:
+                new Date()
 
         };
 
 
 
-        users.push(newUser);
-
-
-
-        fs.writeFileSync(
-            filePath,
-            JSON.stringify(
-                users,
-                null,
-                2
-            )
-        );
+        const result =
+            await users.insertOne(newUser);
 
 
 
@@ -156,10 +163,10 @@ export default async function handler(
             jwt.sign(
 
                 {
-                    id: newUser.id,
-                    username: newUser.username,
-                    role: newUser.role,
-                    storeName: newUser.storeName
+                    id: result.insertedId,
+                    username,
+                    role: "owner",
+                    storeName
                 },
 
                 JWT_SECRET,
@@ -182,33 +189,34 @@ export default async function handler(
 
 
             user: {
-                id: newUser.id,
-                name: newUser.name,
-                email: newUser.email,
-                username: newUser.username,
-                storeName: newUser.storeName,
-                role: newUser.role
+                id: result.insertedId,
+                name,
+                email,
+                username,
+                storeName,
+                role: "owner"
             }
 
         });
 
 
+
     }
     catch (error: any) {
 
+
         console.error(
-            "REGISTER ERROR:",
+            "REGISTER ERROR",
             error
         );
 
 
         return res.status(500).json({
 
-            error:
-                error.message ||
-                "Server error"
+            error: error.message
 
         });
+
 
     }
 
