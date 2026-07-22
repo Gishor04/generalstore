@@ -4,9 +4,16 @@ import fs from "fs";
 import path from "path";
 import jwt from "jsonwebtoken";
 
+
 const JWT_SECRET =
     process.env.JWT_SECRET ||
     "general-store-super-secret-key-12345!";
+
+
+const filePath = path.join(
+    "/tmp",
+    "users.json"
+);
 
 
 export default async function handler(
@@ -33,6 +40,7 @@ export default async function handler(
         } = req.body;
 
 
+
         if (
             !name ||
             !email ||
@@ -48,28 +56,31 @@ export default async function handler(
         }
 
 
-        const filePath = path.join(
-            process.cwd(),
-            "data/users.json"
-        );
-
 
         let users: any[] = [];
 
 
+
         if (fs.existsSync(filePath)) {
-            users = JSON.parse(
-                fs.readFileSync(filePath, "utf8")
-            );
+
+            const data =
+                fs.readFileSync(
+                    filePath,
+                    "utf8"
+                );
+
+            users = JSON.parse(data);
+
         }
 
 
 
         const exists = users.find(
-            u =>
+            (u) =>
                 u.email === email ||
                 u.username === username
         );
+
 
 
         if (exists) {
@@ -83,17 +94,25 @@ export default async function handler(
 
 
         const hashedPassword =
-            await bcrypt.hash(password, 10);
+            await bcrypt.hash(
+                password,
+                10
+            );
+
 
 
         const hashedPin =
-            await bcrypt.hash(pin || "0814", 10);
+            await bcrypt.hash(
+                pin || "0814",
+                10
+            );
 
 
 
         const newUser = {
 
-            id: "usr_" + Date.now(),
+            id:
+                "usr_" + Date.now(),
 
             name,
 
@@ -101,11 +120,16 @@ export default async function handler(
 
             username,
 
-            password: hashedPassword,
+            password:
+                hashedPassword,
 
-            pin: hashedPin,
+
+            pin:
+                hashedPin,
+
 
             storeName,
+
 
             role: "owner"
 
@@ -119,64 +143,69 @@ export default async function handler(
 
         fs.writeFileSync(
             filePath,
-            JSON.stringify(users, null, 2)
+            JSON.stringify(
+                users,
+                null,
+                2
+            )
         );
 
 
 
+        const token =
+            jwt.sign(
 
-        const token = jwt.sign(
+                {
+                    id: newUser.id,
+                    username: newUser.username,
+                    role: newUser.role,
+                    storeName: newUser.storeName
+                },
 
-            {
-                id: newUser.id,
-                username,
-                role: "owner",
-                storeName
+                JWT_SECRET,
 
-            },
+                {
+                    expiresIn: "30d"
+                }
 
-            JWT_SECRET,
-
-            {
-                expiresIn: "30d"
-            }
-
-        );
-
+            );
 
 
 
         return res.status(201).json({
 
-            message: "Registration successful",
+            message:
+                "Registration successful",
+
 
             token,
 
 
             user: {
                 id: newUser.id,
-                name,
-                email,
-                username,
-                storeName,
-                role: "owner"
+                name: newUser.name,
+                email: newUser.email,
+                username: newUser.username,
+                storeName: newUser.storeName,
+                role: newUser.role
             }
-
 
         });
 
 
-
     }
-
     catch (error: any) {
 
-        console.error(error);
+        console.error(
+            "REGISTER ERROR:",
+            error
+        );
 
 
         return res.status(500).json({
 
-            error: error.message ||
+            error:
+                error.message ||
                 "Server error"
 
         });
