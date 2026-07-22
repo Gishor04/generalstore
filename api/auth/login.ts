@@ -19,6 +19,9 @@ let client: MongoClient | null = null;
 async function connectDB() {
 
     if (!client) {
+        if (!MONGODB_URI) {
+            throw new Error("MONGODB_URI is not defined");
+        }
         client = new MongoClient(MONGODB_URI);
         await client.connect();
     }

@@ -20,11 +20,14 @@ let client: MongoClient;
 async function connectDB() {
 
     if (!client) {
+        if (!MONGODB_URI) {
+            throw new Error("MONGODB_URI is not defined");
+        }
         client = new MongoClient(MONGODB_URI);
         await client.connect();
     }
 
-    return client.db("general_store");
+    return client.db("general-store");
 
 }
 
