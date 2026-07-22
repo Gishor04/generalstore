@@ -1,0 +1,122 @@
+[
+  {
+    "id": "prod_milk",
+    "name": "Fresh Whole Milk",
+    "category": "Dairy",
+    "price": 3.49,
+    "costPrice": 2.1,
+    "quantity": 44,
+    "unit": "litre",
+    "lowStockThreshold": 10,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_eggs",
+    "name": "Brown Grade A Eggs",
+    "category": "Dairy",
+    "price": 4.99,
+    "costPrice": 3,
+    "quantity": 28,
+    "unit": "pcs",
+    "lowStockThreshold": 12,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1516448620398-c5f44bf9f441?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_bread",
+    "name": "Artisan Sourdough Bread",
+    "category": "Bakery",
+    "price": 5.5,
+    "costPrice": 3.2,
+    "quantity": 15,
+    "unit": "pcs",
+    "lowStockThreshold": 8,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_apples",
+    "name": "Organic Honeycrisp Apples",
+    "category": "Produce",
+    "price": 2.99,
+    "costPrice": 1.4,
+    "quantity": 80,
+    "unit": "kg",
+    "lowStockThreshold": 15,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_bananas",
+    "name": "Fresh Cavendish Bananas",
+    "category": "Produce",
+    "price": 1.89,
+    "costPrice": 0.8,
+    "quantity": 119,
+    "unit": "kg",
+    "lowStockThreshold": 20,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_cheese",
+    "name": "Aged Cheddar Cheese",
+    "category": "Dairy",
+    "price": 6.99,
+    "costPrice": 4.1,
+    "quantity": 24,
+    "unit": "pcs",
+    "lowStockThreshold": 6,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_coffee",
+    "name": "Premium Coffee Beans",
+    "category": "Beverages",
+    "price": 14.99,
+    "costPrice": 8.5,
+    "quantity": 18,
+    "unit": "pcs",
+    "lowStockThreshold": 5,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_rice",
+    "name": "Jasmine Fragrant Rice",
+    "category": "Pantry",
+    "price": 12.5,
+    "costPrice": 7.2,
+    "quantity": 40,
+    "unit": "pcs",
+    "lowStockThreshold": 10,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_oliveoil",
+    "name": "Cold Pressed Olive Oil",
+    "category": "Pantry",
+    "price": 16.99,
+    "costPrice": 9.8,
+    "quantity": 20,
+    "unit": "pcs",
+    "lowStockThreshold": 8,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=200&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": "prod_soap",
+    "name": "Eco-Friendly Hand Soap",
+    "category": "Household",
+    "price": 3.99,
+    "costPrice": 2.1,
+    "quantity": 35,
+    "unit": "pcs",
+    "lowStockThreshold": 10,
+    "createdAt": "2026-07-22T05:02:01.744Z",
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=200&auto=format&fit=crop&q=60"
+  }
+]

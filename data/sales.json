@@ -1,0 +1,2586 @@
+[
+  {
+    "id": "sale_1784696521744_fhykh",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 2,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 39.96,
+    "totalCost": 22.4,
+    "date": "2026-06-23",
+    "timestamp": "2026-06-23T06:21:01.744Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1001"
+  },
+  {
+    "id": "sale_1784696521745_z8p6z",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 32.94,
+    "totalCost": 18.6,
+    "date": "2026-06-23",
+    "timestamp": "2026-06-23T09:24:01.744Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1002"
+  },
+  {
+    "id": "sale_1784696521745_w49ej",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 2,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 13.98,
+    "totalCost": 8.2,
+    "date": "2026-06-23",
+    "timestamp": "2026-06-23T04:44:01.744Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1003"
+  },
+  {
+    "id": "sale_1784696521745_unjdl",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 1,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 57.95,
+    "totalCost": 32.9,
+    "date": "2026-06-24",
+    "timestamp": "2026-06-24T10:20:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1004"
+  },
+  {
+    "id": "sale_1784696521745_gi57b",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 18.77,
+    "totalCost": 10.1,
+    "date": "2026-06-24",
+    "timestamp": "2026-06-24T04:58:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1005"
+  },
+  {
+    "id": "sale_1784696521745_7ktv9",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 2,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 36.87,
+    "totalCost": 21.2,
+    "date": "2026-06-24",
+    "timestamp": "2026-06-24T06:37:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1006"
+  },
+  {
+    "id": "sale_1784696521745_dh2tu",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 3.49,
+    "totalCost": 2.1,
+    "date": "2026-06-25",
+    "timestamp": "2026-06-25T06:31:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1007"
+  },
+  {
+    "id": "sale_1784696521745_ogbn4",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 2,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 86.47,
+    "totalCost": 49.7,
+    "date": "2026-06-25",
+    "timestamp": "2026-06-25T06:58:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1008"
+  },
+  {
+    "id": "sale_1784696521745_9g8lw",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 30.25,
+    "totalCost": 17.1,
+    "date": "2026-06-25",
+    "timestamp": "2026-06-25T09:42:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1009"
+  },
+  {
+    "id": "sale_1784696521745_0w15h",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 41.95,
+    "totalCost": 23.3,
+    "date": "2026-06-25",
+    "timestamp": "2026-06-25T10:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1010"
+  },
+  {
+    "id": "sale_1784696521745_1jelk",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 33.47,
+    "totalCost": 19.5,
+    "date": "2026-06-26",
+    "timestamp": "2026-06-26T06:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1011"
+  },
+  {
+    "id": "sale_1784696521745_6ulkl",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 68.95,
+    "totalCost": 39.3,
+    "date": "2026-06-26",
+    "timestamp": "2026-06-26T12:58:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1012"
+  },
+  {
+    "id": "sale_1784696521745_quw39",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 3,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 53.94,
+    "totalCost": 29.7,
+    "date": "2026-06-26",
+    "timestamp": "2026-06-26T13:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1013"
+  },
+  {
+    "id": "sale_1784696521745_4sxzp",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 1,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 19.98,
+    "totalCost": 11.2,
+    "date": "2026-06-26",
+    "timestamp": "2026-06-26T08:15:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1014"
+  },
+  {
+    "id": "sale_1784696521745_l46xh",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 19.44,
+    "totalCost": 10.5,
+    "date": "2026-06-27",
+    "timestamp": "2026-06-27T05:15:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1015"
+  },
+  {
+    "id": "sale_1784696521745_jkcmd",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 40.99,
+    "totalCost": 23.7,
+    "date": "2026-06-27",
+    "timestamp": "2026-06-27T04:06:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1016"
+  },
+  {
+    "id": "sale_1784696521745_gtwed",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 23.45,
+    "totalCost": 12.3,
+    "date": "2026-06-28",
+    "timestamp": "2026-06-28T06:22:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1017"
+  },
+  {
+    "id": "sale_1784696521745_uffri",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 1,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 20.27,
+    "totalCost": 10.9,
+    "date": "2026-06-28",
+    "timestamp": "2026-06-28T05:01:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1018"
+  },
+  {
+    "id": "sale_1784696521745_ju4jr",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 5.5,
+    "totalCost": 3.2,
+    "date": "2026-06-28",
+    "timestamp": "2026-06-28T05:48:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1019"
+  },
+  {
+    "id": "sale_1784696521745_3fn02",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 11.98,
+    "totalCost": 6.7,
+    "date": "2026-06-28",
+    "timestamp": "2026-06-28T12:48:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1020"
+  },
+  {
+    "id": "sale_1784696521745_med6p",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 62.94,
+    "totalCost": 35.7,
+    "date": "2026-06-29",
+    "timestamp": "2026-06-29T04:01:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1021"
+  },
+  {
+    "id": "sale_1784696521745_aoac3",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 2.99,
+    "totalCost": 1.4,
+    "date": "2026-06-29",
+    "timestamp": "2026-06-29T06:07:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1022"
+  },
+  {
+    "id": "sale_1784696521745_jnijj",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 56.35,
+    "totalCost": 32.3,
+    "date": "2026-06-29",
+    "timestamp": "2026-06-29T07:46:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1023"
+  },
+  {
+    "id": "sale_1784696521745_rowgj",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 42.48,
+    "totalCost": 24.2,
+    "date": "2026-06-30",
+    "timestamp": "2026-06-30T05:41:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1024"
+  },
+  {
+    "id": "sale_1784696521745_54n6v",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 14.47,
+    "totalCost": 7.4,
+    "date": "2026-06-30",
+    "timestamp": "2026-06-30T12:30:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1025"
+  },
+  {
+    "id": "sale_1784696521745_4w1wc",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 1,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 31.99,
+    "totalCost": 18.5,
+    "date": "2026-06-30",
+    "timestamp": "2026-06-30T13:17:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1026"
+  },
+  {
+    "id": "sale_1784696521745_k03xm",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 2,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 15.48,
+    "totalCost": 9.2,
+    "date": "2026-06-30",
+    "timestamp": "2026-06-30T08:20:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1027"
+  },
+  {
+    "id": "sale_1784696521745_ljiiy",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 3,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 26.64,
+    "totalCost": 14.7,
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T11:24:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1028"
+  },
+  {
+    "id": "sale_1784696521745_la0wy",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 3,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      }
+    ],
+    "totalAmount": 30.89,
+    "totalCost": 17.6,
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T12:48:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1029"
+  },
+  {
+    "id": "sale_1784696521745_9dwws",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 47.45,
+    "totalCost": 26.5,
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T11:14:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1030"
+  },
+  {
+    "id": "sale_1784696521745_elpb6",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 10.47,
+    "totalCost": 6.3,
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T08:51:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1031"
+  },
+  {
+    "id": "sale_1784696521745_aiei4",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 14.99,
+    "totalCost": 8.5,
+    "date": "2026-07-02",
+    "timestamp": "2026-07-02T11:01:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1032"
+  },
+  {
+    "id": "sale_1784696521745_mnf83",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      }
+    ],
+    "totalAmount": 6.88,
+    "totalCost": 3.8,
+    "date": "2026-07-02",
+    "timestamp": "2026-07-02T11:17:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1033"
+  },
+  {
+    "id": "sale_1784696521745_3motj",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 21.47,
+    "totalCost": 12.7,
+    "date": "2026-07-02",
+    "timestamp": "2026-07-02T06:21:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1034"
+  },
+  {
+    "id": "sale_1784696521745_lk1cw",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 6.98,
+    "totalCost": 4.2,
+    "date": "2026-07-03",
+    "timestamp": "2026-07-03T11:23:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1035"
+  },
+  {
+    "id": "sale_1784696521745_9pb1z",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 3,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 27.43,
+    "totalCost": 15.3,
+    "date": "2026-07-03",
+    "timestamp": "2026-07-03T12:45:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1036"
+  },
+  {
+    "id": "sale_1784696521745_dm4lp",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 5.5,
+    "totalCost": 3.2,
+    "date": "2026-07-03",
+    "timestamp": "2026-07-03T13:22:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1037"
+  },
+  {
+    "id": "sale_1784696521745_tayty",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 21.97,
+    "totalCost": 12.7,
+    "date": "2026-07-04",
+    "timestamp": "2026-07-04T06:17:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1038"
+  },
+  {
+    "id": "sale_1784696521745_ogekg",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 19.48,
+    "totalCost": 11.4,
+    "date": "2026-07-04",
+    "timestamp": "2026-07-04T13:03:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1039"
+  },
+  {
+    "id": "sale_1784696521745_whudx",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 2,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 46.48,
+    "totalCost": 26.8,
+    "date": "2026-07-04",
+    "timestamp": "2026-07-04T13:09:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1040"
+  },
+  {
+    "id": "sale_1784696521745_0ydjx",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 37.5,
+    "totalCost": 21.6,
+    "date": "2026-07-04",
+    "timestamp": "2026-07-04T06:41:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1041"
+  },
+  {
+    "id": "sale_1784696521745_pr8kz",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 33.47,
+    "totalCost": 19.5,
+    "date": "2026-07-05",
+    "timestamp": "2026-07-05T06:28:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1042"
+  },
+  {
+    "id": "sale_1784696521745_dbiry",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 3,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 14.97,
+    "totalCost": 9,
+    "date": "2026-07-05",
+    "timestamp": "2026-07-05T11:11:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1043"
+  },
+  {
+    "id": "sale_1784696521745_52klg",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 2,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 13.96,
+    "totalCost": 7,
+    "date": "2026-07-06",
+    "timestamp": "2026-07-06T10:01:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1044"
+  },
+  {
+    "id": "sale_1784696521745_3vrsy",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 20.97,
+    "totalCost": 12.3,
+    "date": "2026-07-06",
+    "timestamp": "2026-07-06T09:09:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1045"
+  },
+  {
+    "id": "sale_1784696521745_6onkz",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 3,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 58.96,
+    "totalCost": 33.3,
+    "date": "2026-07-06",
+    "timestamp": "2026-07-06T12:25:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1046"
+  },
+  {
+    "id": "sale_1784696521745_wb0mp",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 10.47,
+    "totalCost": 6.3,
+    "date": "2026-07-07",
+    "timestamp": "2026-07-07T06:11:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1047"
+  },
+  {
+    "id": "sale_1784696521745_49o8v",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 40.95,
+    "totalCost": 22.8,
+    "date": "2026-07-07",
+    "timestamp": "2026-07-07T07:48:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1048"
+  },
+  {
+    "id": "sale_1784696521745_3b8c0",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 3,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 46.41,
+    "totalCost": 27.6,
+    "date": "2026-07-07",
+    "timestamp": "2026-07-07T09:35:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1049"
+  },
+  {
+    "id": "sale_1784696521745_ke3bj",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 14.78,
+    "totalCost": 8,
+    "date": "2026-07-08",
+    "timestamp": "2026-07-08T10:10:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1050"
+  },
+  {
+    "id": "sale_1784696521745_27zna",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 29.98,
+    "totalCost": 17,
+    "date": "2026-07-08",
+    "timestamp": "2026-07-08T05:15:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1051"
+  },
+  {
+    "id": "sale_1784696521745_uvs0q",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 3,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 1,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 27.65,
+    "totalCost": 15.2,
+    "date": "2026-07-08",
+    "timestamp": "2026-07-08T12:44:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1052"
+  },
+  {
+    "id": "sale_1784696521745_24xns",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 2,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 47.95,
+    "totalCost": 26.8,
+    "date": "2026-07-08",
+    "timestamp": "2026-07-08T07:25:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1053"
+  },
+  {
+    "id": "sale_1784696521745_lpk0z",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 1,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 3,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      }
+    ],
+    "totalAmount": 35.16,
+    "totalCost": 19.4,
+    "date": "2026-07-09",
+    "timestamp": "2026-07-09T05:56:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1054"
+  },
+  {
+    "id": "sale_1784696521745_78eui",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 17.74,
+    "totalCost": 8.8,
+    "date": "2026-07-09",
+    "timestamp": "2026-07-09T09:24:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1055"
+  },
+  {
+    "id": "sale_1784696521745_2ai33",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 1,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 6.99,
+    "totalCost": 4.1,
+    "date": "2026-07-09",
+    "timestamp": "2026-07-09T09:42:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1056"
+  },
+  {
+    "id": "sale_1784696521745_l1kmd",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 2,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 38.98,
+    "totalCost": 22.6,
+    "date": "2026-07-10",
+    "timestamp": "2026-07-10T09:40:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1057"
+  },
+  {
+    "id": "sale_1784696521745_d08vi",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 58.47,
+    "totalCost": 33.9,
+    "date": "2026-07-10",
+    "timestamp": "2026-07-10T05:43:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1058"
+  },
+  {
+    "id": "sale_1784696521745_cf7ke",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 2,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 7.98,
+    "totalCost": 4.2,
+    "date": "2026-07-10",
+    "timestamp": "2026-07-10T11:40:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1059"
+  },
+  {
+    "id": "sale_1784696521745_v15xl",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 52.49,
+    "totalCost": 30.1,
+    "date": "2026-07-10",
+    "timestamp": "2026-07-10T12:27:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1060"
+  },
+  {
+    "id": "sale_1784696521745_77jjh",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 2,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 35.97,
+    "totalCost": 20,
+    "date": "2026-07-11",
+    "timestamp": "2026-07-11T08:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1061"
+  },
+  {
+    "id": "sale_1784696521745_54b41",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 3,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 9.16,
+    "totalCost": 4.5,
+    "date": "2026-07-11",
+    "timestamp": "2026-07-11T11:17:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1062"
+  },
+  {
+    "id": "sale_1784696521745_u2lnl",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 18.95,
+    "totalCost": 10.5,
+    "date": "2026-07-11",
+    "timestamp": "2026-07-11T10:23:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1063"
+  },
+  {
+    "id": "sale_1784696521745_dqyk7",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 2.99,
+    "totalCost": 1.4,
+    "date": "2026-07-12",
+    "timestamp": "2026-07-12T04:27:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1064"
+  },
+  {
+    "id": "sale_1784696521745_refrk",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 1,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 13.98,
+    "totalCost": 8.3,
+    "date": "2026-07-12",
+    "timestamp": "2026-07-12T08:29:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1065"
+  },
+  {
+    "id": "sale_1784696521745_tbo1p",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      }
+    ],
+    "totalAmount": 19.73,
+    "totalCost": 10,
+    "date": "2026-07-12",
+    "timestamp": "2026-07-12T06:05:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1066"
+  },
+  {
+    "id": "sale_1784696521745_nk0hz",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 65.96,
+    "totalCost": 37.9,
+    "date": "2026-07-13",
+    "timestamp": "2026-07-13T06:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1067"
+  },
+  {
+    "id": "sale_1784696521745_0te6i",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 7.98,
+    "totalCost": 4.4,
+    "date": "2026-07-13",
+    "timestamp": "2026-07-13T09:42:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1068"
+  },
+  {
+    "id": "sale_1784696521745_dr56j",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 3,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 62.46,
+    "totalCost": 35.7,
+    "date": "2026-07-13",
+    "timestamp": "2026-07-13T11:56:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1069"
+  },
+  {
+    "id": "sale_1784696521745_181nj",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 2,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 9.98,
+    "totalCost": 6,
+    "date": "2026-07-14",
+    "timestamp": "2026-07-14T06:01:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1070"
+  },
+  {
+    "id": "sale_1784696521745_vrkit",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 12.5,
+    "totalCost": 7.2,
+    "date": "2026-07-14",
+    "timestamp": "2026-07-14T07:07:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1071"
+  },
+  {
+    "id": "sale_1784696521745_jytjb",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 26.49,
+    "totalCost": 15,
+    "date": "2026-07-14",
+    "timestamp": "2026-07-14T05:52:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1072"
+  },
+  {
+    "id": "sale_1784696521745_qsqkb",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 1,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 4.99,
+    "totalCost": 3,
+    "date": "2026-07-15",
+    "timestamp": "2026-07-15T05:46:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1073"
+  },
+  {
+    "id": "sale_1784696521745_92aq0",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 2,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 7.98,
+    "totalCost": 4.2,
+    "date": "2026-07-15",
+    "timestamp": "2026-07-15T07:33:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1074"
+  },
+  {
+    "id": "sale_1784696521745_zmqxj",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 5.98,
+    "totalCost": 2.8,
+    "date": "2026-07-16",
+    "timestamp": "2026-07-16T06:39:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1075"
+  },
+  {
+    "id": "sale_1784696521745_41mff",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 1,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 13.97,
+    "totalCost": 8.3,
+    "date": "2026-07-16",
+    "timestamp": "2026-07-16T10:32:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1076"
+  },
+  {
+    "id": "sale_1784696521745_ai11j",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 2,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 33.98,
+    "totalCost": 19.6,
+    "date": "2026-07-16",
+    "timestamp": "2026-07-16T09:41:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1077"
+  },
+  {
+    "id": "sale_1784696521745_qotzt",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 20.97,
+    "totalCost": 12.3,
+    "date": "2026-07-16",
+    "timestamp": "2026-07-16T11:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1078"
+  },
+  {
+    "id": "sale_1784696521745_vrdnt",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 11.97,
+    "totalCost": 6.3,
+    "date": "2026-07-17",
+    "timestamp": "2026-07-17T10:21:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1079"
+  },
+  {
+    "id": "sale_1784696521745_tflf3",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 1,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 14.39,
+    "totalCost": 8,
+    "date": "2026-07-17",
+    "timestamp": "2026-07-17T09:30:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1080"
+  },
+  {
+    "id": "sale_1784696521745_wtnv4",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 3,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 2,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      }
+    ],
+    "totalAmount": 43.45,
+    "totalCost": 24.7,
+    "date": "2026-07-17",
+    "timestamp": "2026-07-17T08:18:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1081"
+  },
+  {
+    "id": "sale_1784696521745_2yaa6",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 25,
+    "totalCost": 14.4,
+    "date": "2026-07-17",
+    "timestamp": "2026-07-17T11:14:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1082"
+  },
+  {
+    "id": "sale_1784696521745_lqcwn",
+    "products": [
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 11,
+    "totalCost": 6.4,
+    "date": "2026-07-18",
+    "timestamp": "2026-07-18T05:00:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1083"
+  },
+  {
+    "id": "sale_1784696521745_ktj9g",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 1,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 3.99,
+    "totalCost": 2.1,
+    "date": "2026-07-18",
+    "timestamp": "2026-07-18T06:28:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1084"
+  },
+  {
+    "id": "sale_1784696521745_1929p",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 2,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 65.93,
+    "totalCost": 37.8,
+    "date": "2026-07-18",
+    "timestamp": "2026-07-18T11:05:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1085"
+  },
+  {
+    "id": "sale_1784696521745_bieph",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 2,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 44.48,
+    "totalCost": 25.8,
+    "date": "2026-07-19",
+    "timestamp": "2026-07-19T08:03:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1086"
+  },
+  {
+    "id": "sale_1784696521745_f3s51",
+    "products": [
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 3,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 45.97,
+    "totalCost": 26.7,
+    "date": "2026-07-19",
+    "timestamp": "2026-07-19T12:59:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1087"
+  },
+  {
+    "id": "sale_1784696521745_qchq2",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 3,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 2,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      },
+      {
+        "productId": "prod_bread",
+        "name": "Artisan Sourdough Bread",
+        "quantitySold": 2,
+        "priceAtSale": 5.5,
+        "costAtSale": 3.2
+      }
+    ],
+    "totalAmount": 29.75,
+    "totalCost": 17,
+    "date": "2026-07-20",
+    "timestamp": "2026-07-20T05:14:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1088"
+  },
+  {
+    "id": "sale_1784696521745_huc52",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 2,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      },
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 3,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      }
+    ],
+    "totalAmount": 71.48,
+    "totalCost": 41.2,
+    "date": "2026-07-20",
+    "timestamp": "2026-07-20T04:15:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1089"
+  },
+  {
+    "id": "sale_1784696521745_6svmn",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_cheese",
+        "name": "Aged Cheddar Cheese",
+        "quantitySold": 1,
+        "priceAtSale": 6.99,
+        "costAtSale": 4.1
+      },
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 3,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 32.43,
+    "totalCost": 19.4,
+    "date": "2026-07-20",
+    "timestamp": "2026-07-20T09:30:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1090"
+  },
+  {
+    "id": "sale_1784696521745_b18zo",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 2,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 18.95,
+    "totalCost": 10.2,
+    "date": "2026-07-21",
+    "timestamp": "2026-07-21T03:50:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1091"
+  },
+  {
+    "id": "sale_1784696521745_mk82f",
+    "products": [
+      {
+        "productId": "prod_soap",
+        "name": "Eco-Friendly Hand Soap",
+        "quantitySold": 3,
+        "priceAtSale": 3.99,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 11.97,
+    "totalCost": 6.3,
+    "date": "2026-07-21",
+    "timestamp": "2026-07-21T05:58:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1092"
+  },
+  {
+    "id": "sale_1784696521745_ovdzi",
+    "products": [
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 2.99,
+    "totalCost": 1.4,
+    "date": "2026-07-21",
+    "timestamp": "2026-07-21T05:32:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1093"
+  },
+  {
+    "id": "sale_1784696521745_6q3fp",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 1,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 25.46,
+    "totalCost": 14.8,
+    "date": "2026-07-21",
+    "timestamp": "2026-07-21T05:51:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1094"
+  },
+  {
+    "id": "sale_1784696521745_90vfj",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 3,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 3,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 19.44,
+    "totalCost": 10.5,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T12:28:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1095"
+  },
+  {
+    "id": "sale_1784696521745_se9ps",
+    "products": [
+      {
+        "productId": "prod_rice",
+        "name": "Jasmine Fragrant Rice",
+        "quantitySold": 2,
+        "priceAtSale": 12.5,
+        "costAtSale": 7.2
+      },
+      {
+        "productId": "prod_apples",
+        "name": "Organic Honeycrisp Apples",
+        "quantitySold": 1,
+        "priceAtSale": 2.99,
+        "costAtSale": 1.4
+      }
+    ],
+    "totalAmount": 27.99,
+    "totalCost": 15.8,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T08:15:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1096"
+  },
+  {
+    "id": "sale_1784696521745_haq7k",
+    "products": [
+      {
+        "productId": "prod_coffee",
+        "name": "Premium Coffee Beans",
+        "quantitySold": 2,
+        "priceAtSale": 14.99,
+        "costAtSale": 8.5
+      }
+    ],
+    "totalAmount": 29.98,
+    "totalCost": 17,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T04:27:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1097"
+  },
+  {
+    "id": "sale_1784696521745_564zw",
+    "products": [
+      {
+        "productId": "prod_oliveoil",
+        "name": "Cold Pressed Olive Oil",
+        "quantitySold": 3,
+        "priceAtSale": 16.99,
+        "costAtSale": 9.8
+      }
+    ],
+    "totalAmount": 50.97,
+    "totalCost": 29.4,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T12:27:01.745Z",
+    "soldBy": "usr_owner",
+    "soldByName": "John StoreOwner",
+    "invoiceNumber": "INV-1098"
+  },
+  {
+    "id": "sle_1784696568028",
+    "products": [
+      {
+        "productId": "prod_milk",
+        "name": "Fresh Whole Milk",
+        "quantitySold": 1,
+        "priceAtSale": 3.49,
+        "costAtSale": 2.1
+      }
+    ],
+    "totalAmount": 3.49,
+    "totalCost": 2.1,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T05:02:48.028Z",
+    "soldBy": "usr_1784696067089",
+    "soldByName": "Gishor",
+    "invoiceNumber": "INV-1099"
+  },
+  {
+    "id": "sle_1784696592993",
+    "products": [
+      {
+        "productId": "prod_eggs",
+        "name": "Brown Grade A Eggs",
+        "quantitySold": 2,
+        "priceAtSale": 4.99,
+        "costAtSale": 3
+      }
+    ],
+    "totalAmount": 9.98,
+    "totalCost": 6,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T05:03:12.993Z",
+    "soldBy": "usr_1784696067089",
+    "soldByName": "Gishor",
+    "invoiceNumber": "INV-1100"
+  },
+  {
+    "id": "sle_1784696735015",
+    "products": [
+      {
+        "productId": "prod_bananas",
+        "name": "Fresh Cavendish Bananas",
+        "quantitySold": 1,
+        "priceAtSale": 1.89,
+        "costAtSale": 0.8
+      }
+    ],
+    "totalAmount": 1.89,
+    "totalCost": 0.8,
+    "date": "2026-07-22",
+    "timestamp": "2026-07-22T05:05:35.015Z",
+    "soldBy": "usr_1784696711131",
+    "soldByName": "gishor",
+    "invoiceNumber": "INV-1101"
+  }
+]

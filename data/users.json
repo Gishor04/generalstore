@@ -1,0 +1,32 @@
+[
+  {
+    "id": "usr_1784696033586",
+    "username": "owner@example.com",
+    "name": "John StoreOwner",
+    "email": "owner@example.com",
+    "role": "owner",
+    "storeName": "My General Store",
+    "pin": "$2b$10$8cwSHzn..P0lvOpSMWuSQuA6HI7HFSdLMMj6fH2yXPlWyIHul4N1C",
+    "password": "$2b$10$8cwSHzn..P0lvOpSMWuSQuXlT2KuNZBcjm9bp0NfA9d.OS6hxJlky"
+  },
+  {
+    "id": "usr_1784696067089",
+    "username": "Gishor",
+    "name": "Gishor",
+    "email": "gishor2000@gmail.com",
+    "role": "owner",
+    "storeName": "SLIIT",
+    "pin": "$2b$10$iGHKJbWVKgeVdy3zHmBNxOB61HRMY3v.TFQ2s7lizn6HU9Vi5oh92",
+    "password": "$2b$10$iGHKJbWVKgeVdy3zHmBNxOqmEpj1L4pBtc433RLcOHX.pYLClpcCO"
+  },
+  {
+    "id": "usr_1784696711131",
+    "username": "Russel",
+    "name": "gishor",
+    "email": "gishor14@gmail.com",
+    "role": "owner",
+    "storeName": "rajendra",
+    "pin": "$2b$10$et2Ax1vylLSGwnPvZFQfyerP/pbTKtu2XytrpbffPJUrIAwmNl8G.",
+    "password": "$2b$10$et2Ax1vylLSGwnPvZFQfyefwftpFFyCl0r8EcAb1KClr1AfL.XrKi"
+  }
+]

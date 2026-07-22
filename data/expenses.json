@@ -1,0 +1,58 @@
+[
+  {
+    "id": "exp_1784696521745_bveub",
+    "title": "A/C Filter Replacement & Cleaning",
+    "amount": 63.19,
+    "date": "2026-06-27",
+    "category": "Maintenance",
+    "createdAt": "2026-06-27T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784696521745_ny4nm",
+    "title": "Bulk Packing Material Purchase",
+    "amount": 105.68,
+    "date": "2026-07-02",
+    "category": "Inventory",
+    "createdAt": "2026-07-02T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784696521745_6lybi",
+    "title": "Electricity & Water Bill",
+    "amount": 120.05,
+    "date": "2026-07-07",
+    "category": "Utilities",
+    "createdAt": "2026-07-07T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784696521745_wln52",
+    "title": "High-Speed Internet subscription",
+    "amount": 45.77,
+    "date": "2026-07-12",
+    "category": "Utilities",
+    "createdAt": "2026-07-12T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784696521745_yxhhu",
+    "title": "A/C Filter Replacement & Cleaning",
+    "amount": 71.46,
+    "date": "2026-07-17",
+    "category": "Maintenance",
+    "createdAt": "2026-07-17T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784696521745_zow9f",
+    "title": "Local Flyer Distribution & Ads",
+    "amount": 74.87,
+    "date": "2026-07-22",
+    "category": "Marketing",
+    "createdAt": "2026-07-22T05:02:01.745Z"
+  },
+  {
+    "id": "exp_1784698301898",
+    "title": "Worker salary",
+    "amount": 35,
+    "date": "2026-07-22",
+    "category": "Other",
+    "createdAt": "2026-07-22T05:31:41.898Z"
+  }
+]

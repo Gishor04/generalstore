@@ -1,0 +1,6 @@
+{
+  "name": "General Store Manager",
+  "description": "A comprehensive web application for store owners to manage products, track daily sales, record expenses, and generate monthly reports.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
