@@ -19,12 +19,8 @@
             "dest": "/api/$1"
         },
         {
-            "src": "/assets/(.*)",
-            "dest": "/dist/assets/$1"
-        },
-        {
             "src": "/(.*)",
-            "dest": "/dist/index.html"
+            "dest": "/index.html"
         }
     ]
 }
