@@ -28,5 +28,15 @@
     "storeName": "rajendra",
     "pin": "$2b$10$et2Ax1vylLSGwnPvZFQfyerP/pbTKtu2XytrpbffPJUrIAwmNl8G.",
     "password": "$2b$10$et2Ax1vylLSGwnPvZFQfyefwftpFFyCl0r8EcAb1KClr1AfL.XrKi"
+  },
+  {
+    "id": "usr_1784700146115",
+    "username": "RAKA",
+    "name": "RAKA",
+    "email": "raka@gmail.com",
+    "role": "owner",
+    "storeName": "RAKA",
+    "pin": "$2b$10$77b0D.YKv24QaLrHFHvvUOJBA690IUtsBUduM7ya15MihYdfm10m6",
+    "password": "$2b$10$77b0D.YKv24QaLrHFHvvUOsbmONIdHvNfhRzaRWsGxZewlDWL69ZC"
   }
 ]
