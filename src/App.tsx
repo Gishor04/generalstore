@@ -70,8 +70,8 @@ export default function App() {
         body: JSON.stringify({ username: loginUsername, password: loginPassword }),
       });
 
-      const data = await response.json();
-      if (response.ok) {
+      const data = await response.json().catch(() => null);
+      if (response.ok && data) {
         localStorage.setItem('store_token', data.token);
         localStorage.setItem('store_user', JSON.stringify(data.user));
         setAuthState({
@@ -80,7 +80,7 @@ export default function App() {
         });
         addToast(`Welcome back, ${data.user.name}!`, 'success');
       } else {
-        setAuthError(data.error || 'Invalid credentials');
+        setAuthError(data?.error || (response.status === 500 ? 'Server internal error (500). Check MongoDB connection.' : 'Invalid credentials'));
       }
     } catch (err) {
       console.error(err);
@@ -119,8 +119,8 @@ export default function App() {
         }),
       });
 
-      const data = await response.json();
-      if (response.ok) {
+      const data = await response.json().catch(() => null);
+      if (response.ok && data) {
         localStorage.setItem('store_token', data.token);
         localStorage.setItem('store_user', JSON.stringify(data.user));
         setAuthState({
@@ -129,7 +129,8 @@ export default function App() {
         });
         addToast(`Store registered successfully!`, 'success');
       } else {
-        setAuthError(data.error || 'Failed to complete registration.');
+        const errorMsg = data?.error || data?.message || (response.status === 500 ? 'Server internal error (500). Please check MONGODB_URI on Vercel.' : 'Registration failed');
+        setAuthError(errorMsg);
       }
     } catch (err) {
       console.error(err);
