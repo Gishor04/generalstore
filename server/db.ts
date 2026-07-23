@@ -17,9 +17,9 @@ let mongoDb: Db | null = null;
 export async function initDB() {
   const uri = process.env.MONGODB_URI;
   if (!uri) {
-    console.error('CRITICAL ERROR: MONGODB_URI not configured in .env file.');
-    console.error('The application requires a valid MongoDB connection to start.');
-    process.exit(1); // Stop execution
+    const msg = 'MONGODB_URI environment variable is not configured. Please add it in your Vercel/Netlify dashboard.';
+    console.error('CRITICAL ERROR:', msg);
+    throw new Error(msg);
   }
 
   // Obfuscate URI for safety display
@@ -37,7 +37,7 @@ export async function initDB() {
     mongoStatusMessage = 'Connecting to MongoDB...';
     console.log(`MongoDB: Attempting to connect to database...`);
     
-    mongoClient = new MongoClient(uri, { connectTimeoutMS: 5000 });
+    mongoClient = new MongoClient(uri, { connectTimeoutMS: 10000, serverSelectionTimeoutMS: 10000 });
     await mongoClient.connect();
     
     // Use the database name from connection string or default
@@ -55,16 +55,14 @@ export async function initDB() {
     isMongoConnected = false;
     mongoStatusMessage = `Connection failed: ${err.message || err}`;
     console.error('MongoDB connection error:', err);
-    console.error('CRITICAL ERROR: Failed to connect to MongoDB. Exiting application.');
-    process.exit(1); // Stop execution
+    throw new Error(`Failed to connect to MongoDB: ${err.message}`);
   }
 }
 
 // Global Db accessor
 export function getDb(): Db {
   if (!mongoDb) {
-    console.error('CRITICAL ERROR: Attempted to get database instance before connection was established.');
-    process.exit(1);
+    throw new Error('Database not connected. Check MONGODB_URI environment variable.');
   }
   return mongoDb;
 }

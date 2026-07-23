@@ -6,8 +6,6 @@ import { createServer as createViteServer } from 'vite';
 import { initDB, getDb, isMongoConnected, mongoStatusMessage, mongoUriObfuscated } from './server/db';
 import { User, Product, Sale, Expense } from './src/types';
 
-// Initialize DB on startup
-await initDB();
 
 const app = express();
 const PORT = 3000;
@@ -788,6 +786,9 @@ app.get('/api/reports/export-pdf', authenticateToken, async (req: AuthenticatedR
 // ==================== FRONTEND SERVER MOUNT ====================
 
 async function startServer() {
+  // Initialize DB for local development
+  await initDB();
+
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
