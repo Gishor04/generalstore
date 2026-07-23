@@ -973,4 +973,9 @@ async function startServer() {
   });
 }
 
-startServer();
+// Only start the full Express server locally, NOT when running inside Netlify Functions
+if (!process.env.NETLIFY && !process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+  startServer();
+}
+
+export default app;
