@@ -2,7 +2,6 @@ import express from 'express';
 import path from 'path';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
-import { createServer as createViteServer } from 'vite';
 import { initDB, getDb, isMongoConnected, mongoStatusMessage, mongoUriObfuscated } from './server/db.js';
 import { User, Product, Sale, Expense } from './src/types.js';
 
@@ -790,6 +789,7 @@ async function startServer() {
   await initDB();
 
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
