@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import { MongoClient, Db } from 'mongodb';
 import dotenv from 'dotenv';
-import { User, Product } from '../src/types';
+import { User, Product } from '../src/types.js';
 
 // Load environment variables
 dotenv.config();

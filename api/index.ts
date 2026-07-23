@@ -1,5 +1,5 @@
-import { initDB } from '../server/db';
-import app from '../server';
+import { initDB } from '../server/db.js';
+import app from '../server.js';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 // Cache the DB init promise so it only runs once per cold start

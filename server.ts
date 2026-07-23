@@ -3,8 +3,8 @@ import path from 'path';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import { createServer as createViteServer } from 'vite';
-import { initDB, getDb, isMongoConnected, mongoStatusMessage, mongoUriObfuscated } from './server/db';
-import { User, Product, Sale, Expense } from './src/types';
+import { initDB, getDb, isMongoConnected, mongoStatusMessage, mongoUriObfuscated } from './server/db.js';
+import { User, Product, Sale, Expense } from './src/types.js';
 
 
 const app = express();
