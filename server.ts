@@ -973,8 +973,8 @@ async function startServer() {
   });
 }
 
-// Only start the full Express server locally, NOT when running inside Netlify Functions
-if (!process.env.NETLIFY && !process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+// Only start the full Express server locally, NOT when running inside Netlify or Vercel Serverless Functions
+if (!process.env.NETLIFY && !process.env.VERCEL && !process.env.AWS_LAMBDA_FUNCTION_VERSION) {
   startServer();
 }
 

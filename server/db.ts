@@ -8,7 +8,7 @@ import { User, Product, Sale, Expense } from '../src/types';
 // Load environment variables
 dotenv.config();
 
-const isServerless = !!(process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_VERSION);
+const isServerless = !!(process.env.NETLIFY || process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_VERSION);
 const DATA_DIR = isServerless ? path.join('/tmp', 'data') : path.join(process.cwd(), 'data');
 
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
