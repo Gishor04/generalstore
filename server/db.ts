@@ -8,7 +8,9 @@ import { User, Product, Sale, Expense } from '../src/types';
 // Load environment variables
 dotenv.config();
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+const isServerless = !!(process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_VERSION);
+const DATA_DIR = isServerless ? path.join('/tmp', 'data') : path.join(process.cwd(), 'data');
+
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
 const PRODUCTS_FILE = path.join(DATA_DIR, 'products.json');
 const SALES_FILE = path.join(DATA_DIR, 'sales.json');
@@ -136,7 +138,7 @@ async function syncToMongo(collectionName: string, data: any[]) {
 }
 
 // Ensure database directory and files exist
-export function initDB() {
+export async function initDB() {
   if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -428,8 +430,8 @@ export function initDB() {
     console.log(`MongoDB/Local: Seeded ${sampleExpenses.length} sample expenses for cashflow.`);
   }
 
-  // Start MongoDB background connection
-  initMongoDB();
+  // Start MongoDB connection synchronously so data is ready for requests
+  await initMongoDB();
 }
 
 // Users Collections

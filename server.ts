@@ -7,7 +7,7 @@ import { initDB, getUsers, saveUsers, getProducts, saveProducts, getSales, saveS
 import { User, Product, Sale, Expense } from './src/types';
 
 // Initialize DB on startup
-initDB();
+await initDB();
 
 const app = express();
 const PORT = 3000;
